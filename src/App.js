@@ -20,11 +20,12 @@ function App() {
   const toogleMode = () => {
     if (Mode === 'light') {
       setMode('dark');
-      document.body.style.backgroundColor = '#171f59'
+      // // document.body.style.backgroundColor = '#171f59'
+      document.body.style.background = 'linear-gradient(to right, #000046, #1cb5e0)';
       showAlert("Dark Mode is Enable", "success")
     } else {
       setMode('light');
-      document.body.style.backgroundColor = 'white'
+      document.body.style.background = 'linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1)';
       showAlert("Light Mode is Enable", "success")
     }
   }
@@ -38,11 +39,11 @@ function App() {
     if (type === 'success') {
       setTimeout(() => {
         setAlert(null);
-      }, 1500);
+      }, 1000);
     } else {
       setTimeout(() => {
         setAlert(null);
-      }, 2300);
+      }, 1500);
     }
 
   }
