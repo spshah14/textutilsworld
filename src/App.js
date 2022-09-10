@@ -15,7 +15,7 @@ import {
 
 
 function App() {
-  const [Mode, setMode] = useState('dark');
+  const [Mode, setMode] = useState('light');
 
   const toogleMode = () => {
     if (Mode === 'light') {
